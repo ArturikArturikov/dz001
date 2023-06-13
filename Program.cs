@@ -37,9 +37,14 @@ Console.Write("Введите целое число: ");
 int num3 = Convert.ToInt32(Console.ReadLine()!);
 
 if (num > num2)
-{
-    int max = num;
-}
+    if (num > num3)
+        {
+            Console.WriteLine($"max = {num}");
+        }
+        else
+        {
+            Console.WriteLine($"max = {num3}");
+        }
 else
     if (num2 > num3)
     {
@@ -49,12 +54,3 @@ else
     {  
         Console.WriteLine($"max = {num3}");
     }
-
-        if (num > num3)
-        {
-            Console.WriteLine($"max = {num}");
-        }
-        else
-        {
-            Console.WriteLine($"max = {num3}");
-        }
